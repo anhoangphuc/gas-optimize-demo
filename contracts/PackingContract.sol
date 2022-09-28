@@ -6,6 +6,7 @@ contract PackingContract {
     uint112 reserve1;
     uint32 blockTimestamp;
     uint256 total;
+    uint256 limit;
 
     constructor() {}
 
@@ -35,5 +36,9 @@ contract PackingContract {
 
     function setReserve0(uint112 reserver0_) external {
         reserve0 = reserver0_;
+    }
+
+    function setLimit(uint256 limit_) external{
+        limit = limit_;
     }
 }
