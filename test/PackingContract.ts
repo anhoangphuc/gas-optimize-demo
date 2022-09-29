@@ -27,11 +27,7 @@ context(`PackingContract`, async () => {
         await packingContract.setReserve0(100);
     })
 
-    it(`setReserve0 success`, async () => {
-        await packingContract.setReserve0(100);
-    })
-
-    it(`Set limit success`, async () => {
-        await packingContract.setLimit(100);
+    it(`setReserve0AndBlockNumber`, async () => {
+        await packingContract.setReserve0AndBlockNumber(100, 100);
     })
 })
