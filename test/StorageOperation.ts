@@ -17,6 +17,11 @@ context(`StorageOperation`, async () => {
         await storageOperation.betterCalculateSum();
     })
 
+    it(`moreBetterCalculateSum`, async () => {
+        await storageOperation.moreBetterCalculateSum();
+    })
+
+
     it(`bestCalculateSum`, async () => {
         await storageOperation.bestCalculateSum();
     })
