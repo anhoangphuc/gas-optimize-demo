@@ -10,7 +10,6 @@ contract StorageOperation {
             sum = sum + arr[i];
         }
     }
-
     function betterCalculateSum() external {
         uint256 localSum = 0;
         for (uint256 i = 0; i < arr.length; i++) {
@@ -18,7 +17,6 @@ contract StorageOperation {
         }
         sum = localSum;
     }
-
     function moreBetterCalculateSum() external {
         uint256 localSum = 0;
         uint256 len = arr.length;
@@ -27,7 +25,6 @@ contract StorageOperation {
         }
         sum = localSum;
     }
-
     function bestCalculateSum() external {
         uint256 localSum = 0;
         uint256[] memory localArr = arr;
