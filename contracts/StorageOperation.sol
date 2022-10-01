@@ -4,7 +4,6 @@ pragma solidity 0.8.12;
 contract StorageOperation {
     uint256[] arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     uint256 sum;
-    uint256[10] arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     function addValues(uint256[] calldata x) external {
         for (uint256 i = 0; i < x.length; i++) {
