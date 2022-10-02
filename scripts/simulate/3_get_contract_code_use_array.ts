@@ -12,14 +12,25 @@ import { network, ethers } from "hardhat"
     console.log(`Contract size is ${contractCode.length / 2}`)
     console.log('--------------------');
 
-    const UseArray1000 = await ethers.getContractFactory('UseArray1000Uint');
-    const useArray1000 = await UseArray1000.deploy();
-    await useArray1000.deployed();
-    console.log(`Contract UseArray1000 is deployed at address ${useArray1000.address}`);
+    const UseArray1000000 = await ethers.getContractFactory('UseArray1000000Uint');
+    const useArray1000000 = await UseArray1000000.deploy();
+    await useArray1000000.deployed();
+    console.log(`Contract UseArray1000000 is deployed at address ${useArray1000000.address}`);
     console.log('--------------------');
-    console.log(`Code deployed at address ${useArray1000.address} is:`)
-    const contractCode2 = await network.provider.send("eth_getCode", [useArray1000.address]) as string;
+    console.log(`Code deployed at address ${useArray1000000.address} is:`)
+    const contractCode2 = await network.provider.send("eth_getCode", [useArray1000000.address]) as string;
     console.log(contractCode2);
-    console.log(`Contract size is ${contractCode.length / 2}`)
+    console.log(`Contract size is ${contractCode2.length / 2}`)
+    console.log('--------------------');
+
+    const UseArray10000000 = await ethers.getContractFactory('UseArray10000000Uint');
+    const useArray10000000 = await UseArray10000000.deploy();
+    await useArray10000000.deployed();
+    console.log(`Contract UseArray10000000 is deployed at address ${useArray10000000.address}`);
+    console.log('--------------------');
+    console.log(`Code deployed at address ${useArray10000000.address} is:`)
+    const contractCode3 = await network.provider.send("eth_getCode", [useArray10000000.address]) as string;
+    console.log(contractCode3);
+    console.log(`Contract size is ${contractCode3.length / 2}`)
     console.log('--------------------');
 })()

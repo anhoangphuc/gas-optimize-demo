@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.12;
 
-contract UseArray1000000Uint {
-    uint256[1000000] public arr;
-    constructor() {}
+contract UseArray10000000Uint {
+    uint256[10000000] public arr;
+    constructor() {
+    }
 
     function accessArr(uint256 index) external view returns (uint256) {
         return arr[index];
