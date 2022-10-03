@@ -2,8 +2,8 @@ import { ethers } from "hardhat";
 import { UseUint256, UseUint32 } from "../typechain-types";
 
 context(`UseUint`, async () => {
-    let useUint32: UseUint32
-    let useUint256: UseUint256
+    let useUint32: UseUint32;
+    let useUint256: UseUint256;
     
     beforeEach(async () => {
         const UseUint32 = await ethers.getContractFactory(`UseUint32`);
